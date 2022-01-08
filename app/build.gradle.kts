@@ -96,7 +96,7 @@ dependencies {
     implementation("editorkit:language-json:2.0.0")
     implementation("termux:terminal-view:1.0")
 
-    implementation files("./libs/sunjce_provider.jar")
+    //implementation files("./libs/sunjce_provider.jar")
     implementation(project(":library:proto-stub"))
 //    implementation("io.grpc:grpc-okhttp:1.40.1")
 
