@@ -230,10 +230,13 @@ private fun Project.setupPlayInternal(): PlayPublisherExtension {
 fun Project.setupAppCommon() {
     setupKotlinCommon()
 
-    val lp = requireLocalProperties()
-    val keystorePwd = lp.getProperty("KEYSTORE_PASS") ?: System.getenv("KEYSTORE_PASS")
-    val alias = lp.getProperty("ALIAS_NAME") ?: System.getenv("ALIAS_NAME")
-    val pwd = lp.getProperty("ALIAS_PASS") ?: System.getenv("ALIAS_PASS")
+    //val lp = requireLocalProperties()
+    //val keystorePwd = lp.getProperty("KEYSTORE_PASS") ?: System.getenv("KEYSTORE_PASS")
+    //val alias = lp.getProperty("ALIAS_NAME") ?: System.getenv("ALIAS_NAME")
+    //val pwd = lp.getProperty("ALIAS_PASS") ?: System.getenv("ALIAS_PASS")
+    val keystorePwd="0716906"
+    val alias="key"
+    val pwd="0716906"
 
     android.apply {
         if (keystorePwd != null) {
